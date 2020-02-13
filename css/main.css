@@ -8,9 +8,7 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family:Ubuntu,sans-serif;
-    color:white;
-    background-image: url("/imagenes/cannibal_corpse-6e0a1490-e307-3554-b517-0a398879ffd0.jpg");
-    background-size: cover;
+    color:black;
 }
 
 h1 {
