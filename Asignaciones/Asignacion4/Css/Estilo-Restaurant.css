@@ -1,17 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Odibee Sans', cursive;
-}
-.menu
-{
+.menu {
    width: 100%;
    background: blue;
 }
 
-.menu ul
-{
+.menu ul {
     margin: 0;
     list-style: none;
     padding: 0;
@@ -19,25 +11,21 @@
     justify-content: center;
 }
 
-.menu li
-{
+.menu li {
     border-right: 1px solid white;
 }
 
-.menu li:hover
-{
+.menu li:hover {
     background: black;
 }
 
-.menu li a 
-{
+.menu li a  {
     display: block;
     padding: 15px 20px;
     color: white;
     text-decoration: none;
 }
-footer
-{
+footer {
     text-align: center;
     color:white;
     background-color: blue;
