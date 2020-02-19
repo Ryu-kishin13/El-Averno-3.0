@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Odibee Sans', cursive;
-    font-size: 25px;
 }
 .menu
 {
@@ -18,6 +17,24 @@
     padding: 0;
     display: flex;
     justify-content: center;
+}
+
+.menu li
+{
+    border-right: 1px solid white;
+}
+
+.menu li:hover
+{
+    background: black;
+}
+
+.menu li a 
+{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
 }
 footer
 {
