@@ -3,13 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Odibee Sans', cursive;
+    font-size: 25px;
 }
-header
+.menu
 {
-    text-align: center;
-    color:white;
-    background-color: blue;
-    background-image: url(/imagenes/pngguru.com.png);
+   width: 100%;
+   background: blue;
+}
+
+.menu ul
+{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 footer
 {
@@ -17,4 +25,5 @@ footer
     color:white;
     background-color: blue;
     background-image: url(/imagenes/pngguru.com.png);
+    background-size: cover;
 }
