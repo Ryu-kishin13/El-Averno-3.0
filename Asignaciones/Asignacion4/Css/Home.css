@@ -97,16 +97,17 @@ body
     }
 }
 
+body
+{
+    width:100%;
+    size: cover;
+    color:white;
+}
+
 footer
 {
     text-align: center;
     color:white;
     background-color: blue;
     background-size: cover;
-}
-body
-{
-    width:100%;
-    size: cover;
-    color:white;
 }
