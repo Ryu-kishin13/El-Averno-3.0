@@ -96,6 +96,12 @@ body
         margin: 0;
     }
 }
+
+.main-row
+{
+    text-align: center;
+}
+
 footer {
     text-align: center;
     color:white;
