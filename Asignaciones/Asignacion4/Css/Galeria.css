@@ -115,7 +115,7 @@ header
     background-color: #4e94ab;
 }
 
-.galeriaimg
+#galeriaimg
 {
     height: 500px;
     width: 100%;
@@ -130,7 +130,9 @@ header
     {
         height: 300px;
         width: 27%;
-        margin: 6px;
+        margin: 7px;
+        overflow: hidden;
+        box-shadow: 0 0 7px #fff;
 
     }
     
@@ -142,7 +144,28 @@ header
     }
     .galeria img:hover
     {
-        transform: scale(1.5);
+        transform: scale(1.7);
+    }
+    @media screen and(max-width:1200px)
+    {
+        .galeria
+        {
+            width: 35%;
+        }
+    }
+    @media screen and(max-width:900px)
+    {
+        .galeria
+        {
+            width: 45%;
+        }
+    }
+    @media screen and(max-width:700px)
+    {
+        .galeria
+        {
+            width: 55%;
+        }
     }
 
 footer
