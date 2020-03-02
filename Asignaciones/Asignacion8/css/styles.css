@@ -7,14 +7,14 @@ html {
   body {
     width: 800px;
     margin: 0 auto;
-    background-image: url(../images/Saitama-one-punch-man-png.png);
+    background-image: url(https://revistaliterariamonolito.com/wp-content/uploads/2018/12/924242.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
   
   h1, h2 {
     font-family:  cursive;
-    color: blue;
+    color: green;
     font-weight: bold;
   }
   
@@ -30,6 +30,7 @@ html {
     font-family: cursive;
     font-weight: bold;
     text-align: center;
+    color: red;
   }
   
   /* section styles */
@@ -37,7 +38,7 @@ html {
   section article {
     width: 33%;
     float: left;
-    color: red;
+    color: white;
   }
   
   section p {
