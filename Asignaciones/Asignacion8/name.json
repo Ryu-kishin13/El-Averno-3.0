@@ -1,0 +1,41 @@
+{
+    "squadName" : "One Punch Man",
+    "homeTown" : "Japon",
+    "formed" : 2015,
+    "secretBase" : "Asociacion de Heroes",
+    "active" : true,
+    "members" : [
+      {
+        "name" : "Saitama",
+        "age" : 25,
+        "secretIdentity" : "Calvo con Capa",
+        "powers" : [
+          "Super Fuerza",
+          "Super Velocidad",
+          "Reflejos Super Humanos",
+          "Inmunidad Total"
+        ]
+      },
+      {
+        "name" : "Genos",
+        "age" : 19,
+        "secretIdentity" : "Cyborg Demoniaco",
+        "powers" : [
+          "Mejora De Cuerpo Completo Cyborg",
+          "Cañones de Incineracion",
+          "Super Fuerza y Resistencia"
+        ]
+      },
+      {
+        "name" : "Tatsumaki",
+        "age" : 28,
+        "secretIdentity" : "Tornado de Terror",
+        "powers" : [
+          "Psicoquinesis",
+          "Barreras Psiquicas",
+          "Torbellino Psiquico",
+          "Teletransportacion"
+        ]
+      }
+    ]
+  }
