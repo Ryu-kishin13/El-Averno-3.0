@@ -3,7 +3,7 @@ let weatherRequest = new XMLHttpRequest ();
 // APIKEY: 937b547934822f05a2a526ae028e4bd4
 // Identificación de Francia: 6455259
 let apiURLstring =
-'https://api.openweathermap.org/data/2.5/weather?id=6455259&units=imperial&APPID=937b547934822f05a2a526ae028e4bd4'
+'https://api.openweathermap.org/data/2.5/weather?id=6455259&units=Metric&APPID=937b547934822f05a2a526ae028e4bd4'
 weatherRequest.open ('GET', apiURLstring, true);
 weatherRequest.send ();
 /* Para esperar a que se cargue el objeto de solicitud, use el método onload para
