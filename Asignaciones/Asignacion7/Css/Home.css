@@ -110,6 +110,11 @@ body
     text-align: center;
 }
 
+#info
+{
+    padding-top: 95px;
+}
+
 footer
 {
     text-align: center;
