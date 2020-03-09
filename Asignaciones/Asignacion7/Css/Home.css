@@ -25,6 +25,7 @@ body
     background: #4e94ab;
     position: fixed;
     text-align: center;
+    padding-top: 4px;
 }
 
 #btn_menu
@@ -121,6 +122,7 @@ body
 #info
 {
     padding-top: 130px;
+    margin-left: 6px;
 }
 
 footer
