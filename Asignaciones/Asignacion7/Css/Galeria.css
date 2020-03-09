@@ -26,6 +26,7 @@ body
     position: fixed;
     text-align: center;
     padding-top: 4px;
+    z-index: 1;
 }
 
 #btn_menu
@@ -129,6 +130,7 @@ header
     padding-top: 130px;
     margin-left: 6px;
     margin-right: 6px;
+    z-index: 2;
 }
 
 .galeria h1
