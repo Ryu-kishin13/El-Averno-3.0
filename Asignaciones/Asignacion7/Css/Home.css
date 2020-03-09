@@ -16,7 +16,7 @@ body
 {
     background-color: rgb(176, 177, 219);
     margin:0;
-    font-family:sans-serif
+    font-family:sans-serif;
 }
 
 #principal
@@ -123,8 +123,37 @@ body
 {
     padding-top: 130px;
     margin-left: 6px;
+    margin-right: 6px;
 }
 
+.negrillas
+{
+    font-weight: bold;
+}
+
+#mainRestaurant
+{
+    padding-top: 130px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#mainHotel
+{
+    padding-top: 130px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.titlesPage
+{
+    font-size: 50px;
+    text-decoration: underline;
+}
+h3
+{
+    font-size: 40px;
+    text-decoration: underline;
+    color: green;
+}
 footer
 {
     text-align: center;
