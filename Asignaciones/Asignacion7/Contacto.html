@@ -4,7 +4,12 @@
 <head>
     <title>Formulario de Contacto</title>
     <meta charset="UTF-8">
+        <script>function mostrarMensaje(){
+            alert("Enviado Correctamente");
+        }
+        </script>
         <link rel="shortcut icon" type="image/x-icon" href="/imagenes/favicon2.ico">
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Css/Formulario.css">
 
 </head>
@@ -57,7 +62,7 @@
             </select>
                 <textarea name="mensaje" cols="30" rows="10" placeholder="Escriba aqui su mensaje"></textarea>
             <div>
-                <input class="button" type="submit" value="Completar">
+                <input class="button" type="submit" value="Completar" onclick="mostrarMensaje()"/>
                 <input class="button" type="reset" value="Limpiar">
             </div>
 
