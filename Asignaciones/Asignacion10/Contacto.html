@@ -40,29 +40,38 @@
     <br>
     <br>
     <main id="formulario">
-        <form action="">
+        <form id="miformulario" action="">
 
             <h2>CONTACTO</h2>
-            <input type="text" name="Nombre" placeholder="Nombre Completo" required autofocus>
-            <input type="email" name="Correo" placeholder="Correo Electronico" required autofocus>
-            <input type="tel" name="Telefono" placeholder="Telefono" required autofocus>
-            <input type="number" name="Cpostal" placeholder="Codigo Postal" required autofocus>
-            <input type="date" name="Fecha" placeholder="Fecha" required autofocus>
-            <p> <input type="text" placeholder="usuario" list="listTipoUsuario"></p>
-                <datalist id="listTipoUsuario">
-                    <option>Turista Nacional</option>
-                    <option>Turista Extranjero</option>
-                    <option>Administrador</option>
-                </datalist>
-            <select name="place">
-                    <option value="">Seleccione Lugar</option>
+            <input type="text" name="Nombre" id="nombre" placeholder="Nombre Completo">
+            <div id="mensaje_nombre" class="errores">Ingrese su nombre</div>
+
+            <input type="email" name="Correo" id="email" placeholder="Correo Electronico">
+            <div id="mensaje_correo" class="errores">Ingrese su correo electronico</div>
+
+
+            <input type="tel" name="Telefono" id="tel" placeholder="Telefono">
+            <div id="mensaje_tel" class="errores">Ingrese su numero telefonico</div>
+
+
+            <input type="date" name="Fecha" id="date" placeholder="Fecha">
+            <div id="mensaje_date" class="errores">Ingrese la fecha</div>
+
+
+            <select name="place" id="pais">
+                    <option value="" selected>Pais</option>
                     <option value="Cochabamba">Cochabamba</option>
                     <option value="LaPaz">La Paz</option>
                     <option value="SantaCruz">Santa Cruz</option>
             </select>
-                <textarea name="mensaje" cols="30" rows="10" placeholder="Escriba aqui su mensaje"></textarea>
+            <div id="mensaje_pais" class="errores">Seleccione alguna opcion</div>
+
+
+                <textarea name="mensaje" id="mensaje" class="campo" cols="30" rows="10" placeholder="Escriba aqui su mensaje"></textarea>
+                <div id="mensaje" class="errores">Debe llenar el espacio en blanco</div>
+
             <div>
-                <input class="button" type="submit" value="Completar" onclick="mostrarMensaje()"/>
+                <input class="button" id="bEnviar" type="submit" value="Completar">
                 <input class="button" type="reset" value="Limpiar">
             </div>
 
@@ -71,8 +80,6 @@
 
 
     </main>
-
-
 
 
 <footer>
@@ -85,5 +92,7 @@
         <p>Todos los derechos de edición por</p> <p class="negrita">LaughingCoffin | Cochabamba-Bolivia</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="js/Validacion_formulario.js"></script>
 </body>
 </html>
