@@ -5,27 +5,25 @@
     <title>Login</title>
     <link rel="stylesheet" href="Css/Login.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/Login.js"></script>
 </head>
 <body>
     <div class="contenedor-form">
         <div class="toggle">
-            <span> Crear Cuenta</span>
         </div>
         
         <div class="formulario">
             <h2>Iniciar Sesión</h2>
-            <form action="#">
-                <input type="text" placeholder="Usuario" required>
-                <input type="password" placeholder="Contraseña" required>
-                <input type="submit" value="Iniciar Sesión">
+            <form name="form" action="Home.html">
+                <input type="text" name="login" placeholder="Usuario">
+                <input type="password" name="password" placeholder="Contraseña">
+                <input type="button" onclick="go();" value="Iniciar Sesión"><br>
+                <br><input type="button" onclick="location.href='Contacto.html'" value="Crear Cuenta">
             </form>
         </div>
         
-        <div class="formulario">
-            <h2>Crea tu Cuenta</h2>
-        </div>
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>    
-    <script src="js/main.js"></script>
+    <script src="js/AnimacionLogin.js"></script>
 </body>
 </html>
