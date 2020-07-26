@@ -84,3 +84,16 @@ body {
   .login-box a:hover {
     color: #fff;
   }
+
+  .errores
+{
+    background: rgb(226, 108, 12);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -57px;
+    margin-left: 420px;
+    padding: 10px;
+    position: absolute;
+}
