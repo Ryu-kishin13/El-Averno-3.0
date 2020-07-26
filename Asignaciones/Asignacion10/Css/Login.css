@@ -1,99 +1,124 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: url(../img/WhatsApp\ Image\ 2020-07-26\ at\ 00.24.17.jpeg) no-repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
-  }
-  
-  .login-box {
-    width: 320px;
-    height: 420px;
-    background: #000;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-  }
-  
-  .login-box .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-  }
-  
-  .login-box h1 {
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-  }
-  
-  .login-box label {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-  }
-  
-  .login-box input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .login-box input[type="text"], .login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .login-box input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #b80f22;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-  }
-  
-  .login-box input[type="submit"]:hover {
-    cursor: pointer;
-    background: #ffc107;
-    color: #000;
-  }
-  
-  .login-box a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
-  }
-  
-  .login-box a:hover {
-    color: #fff;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Courgette', cursive;
+}
 
-  .errores
-{
-    background: rgb(226, 108, 12);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    color: #fff;
-    display: none;
-    font-size: 14px;
-    margin-top: -57px;
-    margin-left: 420px;
-    padding: 10px;
-    position: absolute;
+body {
+  background: url(../img/WhatsApp\ Image\ 2020-07-26\ at\ 00.24.17.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Roboto;
+}
+
+.contenedor-form {
+  background: rgba(0,0,0,.7);
+  max-width: 500px;
+  width: 100%;
+  margin: 48px auto;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+  /*padding: 40px;*/
+}
+
+.contenedor-form .toggle {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  border-top: 2px solid #ff851b;
+  border-bottom: 2px solid #ff851b;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.contenedor-form .toggle:hover {
+  border-top: 2px solid #0075d9;
+  border-bottom: 2px solid #0075d9;
+}
+
+.contenedor-form .toggle span {
+  letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+  margin: 0 0 28px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"] {
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 0 0 20px 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 4px solid #ff851b;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight:normal;
+  transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+  border-bottom: 4px solid #0075d9;
+}
+
+.contenedor-form input[type="submit"] {
+  background: #FF851B;
+  color: #FFF;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover {
+  background: rgba(0, 117, 217, 0.7);
+}
+
+.contenedor-form .reset-password {
+  background: rgba(0, 117, 217, .7);
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.contenedor-form .reset-password a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contenedor-form .formulario {
+  display: none;
+  padding: 40px;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+  display: block;
 }

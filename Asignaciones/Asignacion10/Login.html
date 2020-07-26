@@ -2,29 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/Login.css">
     <title>Login</title>
+    <link rel="stylesheet" href="Css/Login.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="login-box">
-        <img src="img/WhatsApp Image 2020-07-25 at 22.54.54.jpeg" class="avatar" alt="Avatar Image">
-        <h1>Iniciar Sesion</h1>
-        <form>
-            <!--ENTRADA DE NOMBRE DE USUARIO-->
-          <label for="username">Username</label>
-          <input type="text" id="user" placeholder="Usuario" required ="required">
-          <div id="mensaje_usuario" class="errores">Ingresa un usuario valido</div>
-          <!-- ENTRADA DE CONTRASEÑA -->
-          <label for="password">Password</label>
-          <input type="password" id="pass" placeholder="Contraseña" required ="required">
-          <div id="mensaje_password" class="errores">Ingresa una contraseña valida</div>
-          <input id="inicio" type="submit" value="Ingresar">
-          <a href="Contacto.html">Registrate aqui</a>
-        </form>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-      <script src="js/login.js"></script>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+        
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+        </div>
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
 </body>
 </html>
