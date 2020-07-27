@@ -3,6 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+
+.errores
+{
+    background: rgb(226, 108, 12);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -57px;
+    margin-left: 420px;
+    padding: 10px;
+    position: absolute;
 }
 
 body
@@ -12,7 +26,6 @@ body
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
-    font-family: sans-serif;
 }
 
 #principal
