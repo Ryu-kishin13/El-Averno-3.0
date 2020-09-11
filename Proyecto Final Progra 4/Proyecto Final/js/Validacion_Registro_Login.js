@@ -53,7 +53,8 @@ $(document).ready(function()
         
         var nom = $("#nombre").val();
         var ap = $("#apellido").val();
-        var usuario = $("#usuario").val();
+        var ciu = $("#ciudad").val();
+        var ci = $("#ci").val();
         var correo = $("#correo").val();
         var contraseña = $("#contraseña").val();
 
@@ -79,15 +80,26 @@ $(document).ready(function()
                 $("#mensaje_apellido").fadeOut();
 
 
-                if(usuario == "")
+                if(ciu == "")
                 {
-                    $("#mensaje_usuario").fadeIn("");
+                    $("#mensaje_ciudad").fadeIn("");
                     return false;
                 }
                 else
                 {
                     //en otro caso, el mensaje no se muestra
-                    $("#mensaje_usuario").fadeOut();
+                    $("#mensaje_ciudad").fadeOut();
+
+                    if(ci == "")
+                    {
+                        $("#mensaje_ci").fadeIn("");
+                        return false;
+                    }
+                    else
+                    {
+                        //en otro caso, el mensaje no se muestra
+                        $("#mensaje_ci").fadeOut();
+    
 
 
                     if(correo == "" || !expr.test(correo))
@@ -114,6 +126,7 @@ $(document).ready(function()
                 }
             }
         }
+    }
         alert("Se ha registrado correctamente");
         location.reload();
               
