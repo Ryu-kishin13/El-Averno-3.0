@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+    <link rel="stylesheet" href="Css/Login.css">
+    <script type="text/javascript" src="js/Login.js"></script>
+</head>
+<body>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+
+    
+    <!--Formulario Login validado-->
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form name="form" action="Home.html">
+
+                <input type="text" id="us" name="login" placeholder="Usuario">
+                <div id="mensaje_us" class="errores">Debe ingresar usuario</div>
+
+                <input type="password" id="contra" name="password" placeholder="Contraseña" pattern="[A-Za-z0-9@#$%]{8,20}">
+                <div id="mensaje_contra" class="errores">Debe ingresar su contraseña</div>
+
+
+                <input type="button" onclick="go();" id="bSecion" value="Iniciar Sesión">
+
+            </form>
+        </div>
+
+
+    <!--Formulario crear cuenta validado-->
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="#">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <div id="mensaje_nombre" class="errores">No deje el espacio en blanco</div>
+
+                <input type="text" id="apellido" placeholder="Apellido">
+                <div id="mensaje_apellido" class="errores">No deje el espacio en blanco</div>
+
+                <input type="text" id="usuario" placeholder="Usuario">
+                <div id="mensaje_usuario" class="errores">No deje el espacio en blanco</div>
+                
+                <input type="email" id="correo" placeholder="Correo Electronico">
+                <div id="mensaje_correo" class="errores">No deje el espacio en blanco</div>
+
+                <input type="password" id="contraseña" placeholder="Contraseña">
+                <div id="mensaje_contraseña" class="errores">No deje el espacio en blanco</div>
+            
+                <div>
+                <input type="button" id="bRegistrar" value="Registrarse">
+                </div>
+            </form>
+        </div>
+
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
+    <script src="js/Validacion_Registro_Login.js"></script>
+</body>
+</html>

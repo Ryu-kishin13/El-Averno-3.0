@@ -1,0 +1,174 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+
+.img 
+{
+    width: 100%;
+    height: 700px;
+}
+
+body
+{
+    background-color: rgb(176, 177, 219);
+    margin:0;
+    font-family: 'Courgette', cursive;
+}
+
+#principal
+{
+    width: 100%;
+    background: #4e94ab;
+    position: fixed;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#btn_menu
+{
+    display:none;
+}
+
+#principal label
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+#principal label:hover
+{
+    cursor: pointer;
+    background:rgba(0,0,0,0.3);
+}
+
+
+.menu
+{
+   width: 100%;
+   background: blue;
+}
+
+.menu ul
+{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li
+{
+    border-right: 1px solid white;
+}
+
+.menu li:hover
+{
+    background: black;
+}
+
+.menu li a 
+{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:768px)
+    {
+        #principal label
+        {
+            display: block;
+        }
+
+    .menu
+    {
+        position: absolute;
+        background:#4e94ab;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul
+    {
+        flex-direction: column;
+    }
+
+    .menu li
+    {
+        border-top: 1px solid #fff;
+    }
+
+    #btn_menu:checked ~ .menu
+    {
+        margin: 0;
+    }
+}
+
+.main-row
+{
+    text-align: center;
+}
+
+#info
+{
+    padding-top: 130px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.negrillas
+{
+    font-weight: bold;
+}
+
+#mainRestaurant
+{
+    padding-top: 130px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#mainHotel
+{
+    padding-top: 130px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#mainHitoricSites
+{
+    padding-top: 130px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#deportesYrecreacion
+{
+    padding-top: 130px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.titlesPage
+{
+    font-size: 50px;
+    text-decoration: underline;
+}
+h3
+{
+    font-size: 40px;
+    text-decoration: underline;
+    color: green;
+}
+footer
+{
+    text-align: center;
+    color:white;
+    background-color: blue;
+}
